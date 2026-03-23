@@ -55,11 +55,11 @@ CONTENT_REPLACEMENTS = [
         'Harness the power of advanced AI technology to discover, invest, and grow your wealth. Committed to delivering cutting-edge investment solutions with comprehensive risk management.'
     ),
     (
-        'Using our Artificial Intelligence Techology, you can now learn, trade, and earn money. Intent on providing the most innovative investment solution with virtual risk assessment.',
+        'Using our Artificial Intelligence Technology, you can now learn, trade, and earn money. Intent on providing the most innovative investment solution with virtual risk assessment.',
         'Harness the power of advanced AI technology to discover, invest, and grow your wealth. Committed to delivering cutting-edge investment solutions with comprehensive risk management.'
     ),
     (
-        'Learn, Trade and Earn Using our Artificial Intelligence Techology Today. Geared at offering the most advanced investment solution with proper virtual risk assessment.',
+        'Learn, Trade and Earn Using our Artificial Intelligence Technology Today. Geared at offering the most advanced investment solution with proper virtual risk assessment.',
         'Discover smart investment opportunities powered by artificial intelligence. Experience sophisticated portfolio management with professional risk assessment tools.'
     ),
 
