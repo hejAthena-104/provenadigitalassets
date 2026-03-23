@@ -2047,6 +2047,235 @@ body.dark .uk-container p {
   color: #ffffff !important;
 }
 
+/* ===== MOBILE RESPONSIVE FIXES ===== */
+
+@media (max-width: 767px) {
+
+  /* --- GLOBAL MOBILE OVERRIDES --- */
+
+  /* Hide scrollbar on mobile */
+  html, body {
+    overflow-x: hidden !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+  }
+
+  body {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+  }
+
+  /* Force all UIkit grids to stack vertically on mobile */
+  .uk-grid[data-uk-grid],
+  .uk-grid {
+    flex-direction: column !important;
+  }
+
+  .uk-grid > div,
+  .uk-grid[data-uk-grid] > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  /* Ensure containers have breathing room */
+  .uk-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    overflow: hidden !important;
+  }
+
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* --- HERO SLIDER --- */
+  .slide-captions h1 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    padding: 0 5px;
+  }
+
+  .slide-captions .lead {
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+    padding: 0 10px;
+  }
+
+  /* --- "TRUSTED BY CLIENTS" SECTION --- */
+  /* Hide the side image on mobile */
+  .in-wave-16 .uk-cover-container,
+  .in-wave-16 .uk-card-media-right,
+  .in-wave-16 .uk-width-2-5 {
+    display: none !important;
+  }
+
+  /* Hide "As seen on" logos section on mobile */
+  .uk-margin-medium-top .uk-grid-divider {
+    display: none !important;
+  }
+
+  /* Hide partners carousel on mobile */
+  .carousel-description-clients .col-lg-8 {
+    display: none !important;
+  }
+
+  /* Hide video advantage section on mobile */
+  .section-video {
+    display: none !important;
+  }
+
+  /* Awards - stack vertically */
+  .uk-child-width-1-3 > div {
+    width: 100% !important;
+    min-width: 100% !important;
+    flex: 0 0 100% !important;
+    padding: 12px 0 !important;
+    border-bottom: 1px solid #eee;
+  }
+
+  .uk-child-width-1-3 > div:last-child {
+    border-bottom: none;
+  }
+
+  /* "As seen on" logos */
+  .f-cont_888ji98 .uk-grid > div {
+    width: 50% !important;
+    flex: 0 0 50% !important;
+  }
+
+  /* --- "SECURE YOUR DIGITAL ASSETS" BANNER --- */
+  h2.hhwj6738 {
+    width: 100% !important;
+    font-size: 17px !important;
+  }
+
+  /* --- VIDEO / ADVANTAGE SECTION --- */
+  .headng_stef {
+    font-size: 20px !important;
+  }
+
+  .section-video .lead span {
+    font-size: 15px !important;
+  }
+
+  /* --- GALLERY + ABOUT TEXT SECTION --- */
+  .pftb .col-lg-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .yuwnk7826stef img {
+    height: 250px !important;
+  }
+
+  /* --- FEATURE CARDS --- */
+  .feature-cards-grid > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  #features {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+  }
+
+  /* --- REGISTER / FUND / GROW STEPS --- */
+  .uejje7893hh38[data-uk-grid] > div {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    padding: 15px 0 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .uejje7893hh38[data-uk-grid] > div:last-child {
+    border-bottom: none;
+  }
+
+  /* --- STATS COUNTER SECTION --- */
+  .jdjjwjwjw9292992_stef > div {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    text-align: center;
+    padding: 15px 0 !important;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .jdjjwjwjw9292992_stef > div:last-child {
+    border-bottom: none;
+  }
+
+  .hhhsuusjsj9wjkwmkkw {
+    text-align: center !important;
+    font-size: 22px !important;
+  }
+
+  /* --- CTA CARD --- */
+  .uk-card-default .uk-flex-middle[data-uk-grid] {
+    text-align: center;
+    gap: 15px;
+  }
+
+  /* --- PARTNERS SECTION --- */
+  .carousel-description-clients .col-lg-4,
+  .carousel-description-clients .col-lg-8 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  /* --- FOOTER --- */
+  #footer .col-lg-4,
+  #footer .col-lg-3,
+  #footer .col-lg-5,
+  #footer .col-lg-2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    margin-bottom: 20px;
+  }
+
+  #footer img[alt="logo"] {
+    height: auto !important;
+    max-height: 60px !important;
+    width: auto !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-captions h1 {
+    font-size: 18px !important;
+  }
+
+  .slide-captions .lead {
+    font-size: 12px !important;
+  }
+
+  .slide-captions .btn {
+    font-size: 12px !important;
+    padding: 8px 18px !important;
+  }
+
+  .in-wave-12-counter h1 {
+    font-size: 24px !important;
+  }
+
+  #features {
+    font-size: 20px !important;
+  }
+}
+
 /* ===== PRINT STYLES ===== */
 
 @media print {
