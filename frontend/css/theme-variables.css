@@ -1,0 +1,233 @@
+/**
+ * Provena Digital Assets - Theme Variables
+ * CSS Custom Properties for Light/Dark Theme System
+ * Inspired by ApexOneX design aesthetic
+ */
+
+:root {
+  /* ===== Primary Brand Colors ===== */
+  --primary-blue: #0A2FFF;
+  --primary-blue-hover: #0825CC;
+  --primary-blue-light: #3355FF;
+  --primary-blue-glow: rgba(10, 47, 255, 0.35);
+
+  /* ===== Accent Colors ===== */
+  --accent-teal: #14B8A6;
+  --accent-teal-light: #2DD4BF;
+  --accent-teal-dark: #0D9488;
+
+  /* ===== Success/Error/Warning ===== */
+  --color-success: #10B981;
+  --color-success-light: #34D399;
+  --color-error: #EF4444;
+  --color-error-light: #F87171;
+  --color-warning: #F59E0B;
+  --color-warning-light: #FBBF24;
+  --color-info: #3B82F6;
+
+  /* ===== Dark Theme Colors ===== */
+  --bg-dark-primary: #000000;
+  --bg-dark-secondary: #121212;
+  --bg-dark-tertiary: #181818;
+  --bg-dark-elevated: #1E1E1E;
+  --bg-dark-surface: #252525;
+  --bg-dark-card: #1A1A1A;
+
+  /* ===== Light Theme Colors ===== */
+  --bg-light-primary: #FFFFFF;
+  --bg-light-secondary: #F8F9FA;
+  --bg-light-tertiary: #F1F3F5;
+  --bg-light-elevated: #FFFFFF;
+  --bg-light-surface: #E9ECEF;
+
+  /* ===== Text Colors - Dark Theme ===== */
+  --text-dark-primary: #FFFFFF;
+  --text-dark-secondary: #E0E0E0;
+  --text-dark-muted: #9CA3AF;
+  --text-dark-disabled: #6B7280;
+
+  /* ===== Text Colors - Light Theme ===== */
+  --text-light-primary: #000000;
+  --text-light-secondary: #212529;
+  --text-light-muted: #6C757D;
+  --text-light-disabled: #ADB5BD;
+
+  /* ===== Border Colors ===== */
+  --border-dark: rgba(255, 255, 255, 0.1);
+  --border-dark-hover: rgba(255, 255, 255, 0.2);
+  --border-light: rgba(0, 0, 0, 0.1);
+  --border-light-hover: rgba(0, 0, 0, 0.2);
+
+  /* ===== Shadow Definitions ===== */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-glow: 0 0 20px var(--primary-blue-glow);
+
+  /* ===== Dark Theme Shadows ===== */
+  --shadow-dark-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-dark-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-dark-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-dark-xl: 0 20px 40px rgba(0, 0, 0, 0.6);
+
+  /* ===== Gradients ===== */
+  --gradient-primary: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-teal) 100%);
+  --gradient-dark: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+  --gradient-text-dark: linear-gradient(135deg, #FFFFFF 0%, var(--accent-teal) 100%);
+  --gradient-text-light: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-teal) 100%);
+
+  /* ===== Typography ===== */
+  --font-primary: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Lora', Georgia, serif;
+  --font-mono: 'SF Mono', Monaco, 'Courier New', monospace;
+
+  /* ===== Spacing Scale ===== */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+
+  /* ===== Border Radius ===== */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* ===== Transitions ===== */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+  --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ===== Z-Index Scale ===== */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+
+  /* ===== Active Theme Variables (Light Theme Default) ===== */
+  --bg-primary: var(--bg-light-primary);
+  --bg-secondary: var(--bg-light-secondary);
+  --bg-tertiary: var(--bg-light-tertiary);
+  --bg-elevated: var(--bg-light-elevated);
+  --bg-surface: var(--bg-light-surface);
+
+  --text-primary: var(--text-light-primary);
+  --text-secondary: var(--text-light-secondary);
+  --text-muted: var(--text-light-muted);
+  --text-disabled: var(--text-light-disabled);
+
+  --border-color: var(--border-light);
+  --border-hover: var(--border-light-hover);
+
+  --shadow-card: var(--shadow-md);
+  --shadow-card-hover: var(--shadow-lg);
+
+  --gradient-text: var(--gradient-text-light);
+}
+
+/* ===== Dark Theme Override - ApexOneX Inspired ===== */
+[data-theme="dark"],
+html.dark,
+body.dark {
+  --bg-primary: var(--bg-dark-secondary);
+  --bg-secondary: var(--bg-dark-tertiary);
+  --bg-tertiary: var(--bg-dark-elevated);
+  --bg-elevated: var(--bg-dark-surface);
+  --bg-surface: var(--bg-dark-card);
+
+  --text-primary: var(--text-dark-primary);
+  --text-secondary: var(--text-dark-secondary);
+  --text-muted: var(--text-dark-muted);
+  --text-disabled: var(--text-dark-disabled);
+
+  --border-color: var(--border-dark);
+  --border-hover: var(--border-dark-hover);
+
+  --shadow-card: var(--shadow-dark-md);
+  --shadow-card-hover: var(--shadow-dark-lg);
+
+  --gradient-text: var(--gradient-text-dark);
+
+  /* ApexOneX-inspired teal accents for dark mode */
+  --teal-glow: rgba(20, 184, 166, 0.05);
+  --teal-glow-hover: rgba(20, 184, 166, 0.1);
+  --teal-glow-strong: rgba(20, 184, 166, 0.15);
+  --card-bg-accent: rgba(20, 184, 166, 0.05);
+}
+
+/* ===== System Preference Detection ===== */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]):not(.dark) {
+    --bg-primary: var(--bg-light-primary);
+    --bg-secondary: var(--bg-light-secondary);
+    --bg-tertiary: var(--bg-light-tertiary);
+    --bg-elevated: var(--bg-light-elevated);
+    --bg-surface: var(--bg-light-surface);
+
+    --text-primary: var(--text-light-primary);
+    --text-secondary: var(--text-light-secondary);
+    --text-muted: var(--text-light-muted);
+    --text-disabled: var(--text-light-disabled);
+
+    --border-color: var(--border-light);
+    --border-hover: var(--border-light-hover);
+
+    --shadow-card: var(--shadow-md);
+    --shadow-card-hover: var(--shadow-lg);
+
+    --gradient-text: var(--gradient-text-light);
+  }
+}
+
+/* ===== Utility Classes ===== */
+
+/* Background utilities */
+.bg-primary { background-color: var(--bg-primary) !important; }
+.bg-secondary { background-color: var(--bg-secondary) !important; }
+.bg-tertiary { background-color: var(--bg-tertiary) !important; }
+.bg-elevated { background-color: var(--bg-elevated) !important; }
+.bg-brand { background-color: var(--primary-blue) !important; }
+.bg-brand-gradient { background: var(--gradient-primary) !important; }
+
+/* Text utilities */
+.text-primary { color: var(--text-primary) !important; }
+.text-secondary { color: var(--text-secondary) !important; }
+.text-muted { color: var(--text-muted) !important; }
+.text-brand { color: var(--primary-blue) !important; }
+.text-teal { color: var(--accent-teal) !important; }
+
+/* Gradient text */
+.text-gradient,
+.gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Border utilities */
+.border-brand { border-color: var(--primary-blue) !important; }
+.border-subtle { border-color: var(--border-color) !important; }
+
+/* Shadow utilities */
+.shadow-glow {
+  box-shadow: var(--shadow-glow);
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+.shadow-card-hover:hover {
+  box-shadow: var(--shadow-card-hover);
+}

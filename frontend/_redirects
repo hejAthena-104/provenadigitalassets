@@ -1,0 +1,6 @@
+# Netlify redirects file
+# Redirect authentication and dashboard routes to backend
+
+/auth/*       https://your-backend-url.railway.app/auth/:splat    301!
+/dashboard/*  https://your-backend-url.railway.app/dashboard/:splat 301!
+/secure/*     https://your-backend-url.railway.app/:splat         301!
