@@ -32,7 +32,6 @@ TARGET_PAGES = [
     'forex.html',
     'goldasset.html',
     'insights.html',
-    'investmentplan.html',
     'legals.html',
     'newcrypto.html',
     'oilandgas.html',

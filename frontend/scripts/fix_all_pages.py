@@ -34,7 +34,6 @@ MAIN_PAGES = [
     'forex.html',
     'goldasset.html',
     'insights.html',
-    'investmentplan.html',
     'legals.html',
     'login.html',
     'newcrypto.html',
