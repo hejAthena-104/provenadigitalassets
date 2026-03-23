@@ -2201,6 +2201,33 @@ body.dark .uk-container p {
     border-bottom: none;
   }
 
+  /* Fix UIkit negative margin clipping on mobile */
+  .uejje7893hh38 .uk-grid-small,
+  .uejje7893hh38 .uk-grid {
+    margin-left: 0 !important;
+    padding-left: 5px !important;
+  }
+
+  .uejje7893hh38 .uk-grid-small > div,
+  .uejje7893hh38 .uk-grid > div {
+    padding-left: 10px !important;
+  }
+
+  /* Global fix: UIkit grids have negative left margin that clips content */
+  .uk-grid,
+  .uk-grid-small,
+  .uk-grid-medium,
+  .uk-grid-large {
+    margin-left: 0 !important;
+  }
+
+  .uk-grid > *,
+  .uk-grid-small > *,
+  .uk-grid-medium > *,
+  .uk-grid-large > * {
+    padding-left: 10px !important;
+  }
+
   /* --- STATS COUNTER SECTION --- */
   .jdjjwjwjw9292992_stef > div {
     width: 100% !important;
