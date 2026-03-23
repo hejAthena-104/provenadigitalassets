@@ -2278,6 +2278,16 @@ body.dark .uk-container p {
     max-width: 100% !important;
     object-fit: contain !important;
   }
+
+  /* Hide footer about text and logo column on mobile */
+  .footer-about-col {
+    display: none !important;
+  }
+
+  /* Hide Register/Fund/Grow steps section on mobile */
+  .uk-card-secondary {
+    display: none !important;
+  }
 }
 
 @media (max-width: 480px) {
