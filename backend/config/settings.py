@@ -181,6 +181,13 @@ LOGOUT_REDIRECT_URL = '/auth/login/'
 # Frontend URL (for CORS and redirects)
 FRONTEND_URL = config('FRONTEND_URL', default='http://localhost:8080')
 
+# CSRF Trusted Origins (required for Django 4.0+ with HTTPS)
+CSRF_TRUSTED_ORIGINS = config(
+    'CSRF_TRUSTED_ORIGINS',
+    default='http://localhost:8000,http://127.0.0.1:8000',
+    cast=lambda v: [s.strip() for s in v.split(',')]
+)
+
 # Logging configuration
 LOGGING = {
     'version': 1,
